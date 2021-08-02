@@ -44,7 +44,7 @@
                 </div>
                 <div class="drawer-body">
                     <h6 class="text-muted text-uppercase">Help & Settings</h6>
-                    <a href="#" class="btn btn-outline-success my-2 btn-sm">Your Account</a>
+                    <a href="your_account.html" class="btn btn-outline-success my-2 btn-sm">Your Account</a>
                     <a href="login.html" class="btn btn-warning my-2 btn-sm">Sign in</a>
                    
                 </div>
@@ -161,25 +161,49 @@
             <div class="card-body">
                 <h4 class="card-title font-weight-bold">Register</h4>
                 <!--register form start -->
-                <form novalidate>
+                <form class="needs-validation" method="POST" action="#" novalidate>
                     <div class="form-group">
                       <label for="userName">Your Name: </label>
-                      <input type="text" name="name" class="form-control" placeholder="abc" id="userName">
+                      <input type="text" name="name" class="form-control" placeholder="abc" id="userName" required>
+                      <div class="invalid-feedback">
+                        <i class="fas fa-exclamation-triangle text-danger"></i> Some error in name.
+                    </div>
+                    <div class="valid-feedback">
+                        <i class="far fa-thumbs-up text-success"></i> ok.
+                    </div>
                     </div>
                     <div class="form-group">
                         <label for="userEmail">Email: </label>
-                        <input type="email" name="email" class="form-control" placeholder="abc@gmail.com" id="userEmail">
+                        <input type="email" name="email" class="form-control" placeholder="abc@gmail.com" id="userEmail" required>
                         <small id="passwordHelp" class="form-text text-muted"><i class="fas text-primary fa-info"></i> email must be at enter</small>
+                        <div class="invalid-feedback">
+                            <i class="fas fa-exclamation-triangle text-danger"></i> Some error in email.
+                        </div>
+                        <div class="valid-feedback">
+                            <i class="far fa-thumbs-up text-success"></i> ok.
+                        </div>
                       </div>
                     <div class="form-group">
                       <label for="userPassword">Password: </label>
-                      <input type="password" class="form-control" placeholder="******" name="password" id="userPassword" aria-describedby="passwordHelp">
+                      <input type="password" class="form-control" placeholder="******" name="password" id="userPassword" aria-describedby="passwordHelp" minlength="10" required>
                       <small id="passwordHelp" class="form-text text-muted"> <i class="fas text-primary fa-info"></i> Password must be at least 6 characters</small>
+                      <div class="invalid-feedback">
+                        <i class="fas fa-exclamation-triangle text-danger"></i> Some error in password.
+                    </div>
+                    <div class="valid-feedback">
+                        <i class="far fa-thumbs-up text-success"></i> ok.
+                    </div>
                     </div>
                     <div class="form-group">
                         <label for="userPassword2">Confirm Password: </label>
-                        <input type="password" class="form-control" placeholder="******" name="password2" id="userPassword2" aria-describedby="passwordHelp">
+                        <input type="password" class="form-control" placeholder="******" name="password2" id="userPassword2" aria-describedby="passwordHelp" minlength="10" required>
                         <small id="passwordHelp" class="form-text text-muted"> <i class="fas text-primary fa-info"></i> Password must match the above.</small>
+                        <div class="invalid-feedback">
+                            <i class="fas fa-exclamation-triangle text-danger"></i> Some error in Confirm password.
+                        </div>
+                        <div class="valid-feedback">
+                            <i class="far fa-thumbs-up text-success"></i> ok.
+                        </div>
                       </div>
                     <button type="submit" class="btn btn-warning w-100 btn-sm shadow rounded">Register</button>
                   </form>
@@ -215,6 +239,26 @@
     <script src="js/bootstrap-drawer.min.js"></script>
     <!--  Custom Js  -->
     <script src="js/custom.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
 </body>
 
 </html>
