@@ -154,31 +154,40 @@
     </nav>
     <!-- nab bar end-->
 
-    <!--login form Card start-->
+    <!--register form Card start-->
 
     <div class="container">
         <div class="card mx-auto mt-5 pb-3 shadow rounded" style="width: 25rem;">
             <div class="card-body">
-                <h4 class="card-title font-weight-bold">Login</h4>
-                <!--login form start -->
+                <h4 class="card-title font-weight-bold">Register</h4>
+                <!--register form start -->
                 <form novalidate>
                     <div class="form-group">
-                      <label for="userEmail">Email: </label>
-                      <input type="email" name="email" class="form-control" placeholder="abc@gmail.com" id="userEmail">
-                      <small id="passwordHelp" class="form-text text-muted"><i class="fas text-primary fa-info"></i> email must be at enter</small>
+                      <label for="userName">Your Name: </label>
+                      <input type="text" name="name" class="form-control" placeholder="abc" id="userName">
                     </div>
+                    <div class="form-group">
+                        <label for="userEmail">Email: </label>
+                        <input type="email" name="email" class="form-control" placeholder="abc@gmail.com" id="userEmail">
+                        <small id="passwordHelp" class="form-text text-muted"><i class="fas text-primary fa-info"></i> email must be at enter</small>
+                      </div>
                     <div class="form-group">
                       <label for="userPassword">Password: </label>
                       <input type="password" class="form-control" placeholder="******" name="password" id="userPassword" aria-describedby="passwordHelp">
-                      <small id="passwordHelp" class="form-text text-muted"><i class="fas text-primary fa-info"></i> Password must be at least 6 characters</small>
+                      <small id="passwordHelp" class="form-text text-muted"> <i class="fas text-primary fa-info"></i> Password must be at least 6 characters</small>
                     </div>
-                    <button type="submit" class="btn btn-warning w-100 btn-sm shadow rounded">Signin</button>
+                    <div class="form-group">
+                        <label for="userPassword2">Confirm Password: </label>
+                        <input type="password" class="form-control" placeholder="******" name="password2" id="userPassword2" aria-describedby="passwordHelp">
+                        <small id="passwordHelp" class="form-text text-muted"> <i class="fas text-primary fa-info"></i> Password must match the above.</small>
+                      </div>
+                    <button type="submit" class="btn btn-warning w-100 btn-sm shadow rounded">Register</button>
                   </form>
 
                   <!--OR Seperator-->
-                  <hr class="hr-text" data-content=" New to Amazom?" />
+                  <hr class="hr-text" data-content="OR" />
                   <!-- create account button -->
-                  <a href="register.html" class="btn btn-sm btn-dark w-100">Create your Amazon account</a>
+                  <p class="text-center">Already have an account? <a href="login.html" >Sign In <i class="fas fa-caret-right"></i></a></p>
                   <a href="#" class="btn btn-outline-success w-100 mt-2">
                     <i class="fab fa-google"></i> Sign in with Google
                   </a>
@@ -186,12 +195,12 @@
                     <i class="fab fa-facebook-square"></i> Sign in with Facebook
                   </a>
                   
-                <!--login form end -->
+                <!--register form end -->
             </div>
         </div>
     </div>
 
-    <!--login form Card end-->
+    <!--register form Card end-->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
