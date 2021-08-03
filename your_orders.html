@@ -29,7 +29,7 @@
     <!-- Nabbar start-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <!--drawer start-->
-        <button class="btn btn-outline-light"  data-toggle="drawer" data-target="#amazonDrawer">
+        <button class="btn btn-outline-light" data-toggle="drawer" data-target="#amazonDrawer">
             <i class="fas fa-sliders-h"></i>
         </button>
 
@@ -38,7 +38,7 @@
             <div class="drawer-content drawer-content-scrollable" role="document">
                 <div class="drawer-header bg-dark text-white">
                     <h4 class="drawer-title mx-auto" id="drawer-demo-title">
-                    <i class="far fa-user-circle"></i> Hello, Sign In
+                        <i class="far fa-user-circle"></i> Hello, Sign In
 
                     </h4>
                 </div>
@@ -46,10 +46,11 @@
                     <h6 class="text-muted text-uppercase">Help & Settings</h6>
                     <a href="your_account.html" class="btn btn-outline-success my-2 btn-sm">Your Account</a>
                     <a href="login.html" class="btn btn-warning my-2 btn-sm">Sign in</a>
-                   
+
                 </div>
                 <div class="drawer-footer">
-                    <button type="button" class="btn btn-outline-danger btn-sm" data-dismiss="drawer" aria-label="Close">
+                    <button type="button" class="btn btn-outline-danger btn-sm" data-dismiss="drawer"
+                        aria-label="Close">
                         <i class="fas fa-2x fa-times"></i>
                     </button>
 
@@ -57,7 +58,6 @@
             </div>
         </div>
         <!--drawer end-->
-
         <a class="navbar-brand pl-2" href="#"><img src="img/amazon_logo_white.png" height="30" width="100"
                 alt="amazon white" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -154,6 +154,81 @@
         </div>
     </nav>
     <!-- nab bar end-->
+    <!--crumbs start-->
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent ml-n3">
+                <li class="breadcrumb-item"><a href="your_account.html">Your Account</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Your Orders</li>
+            </ol>
+        </nav>
+    </div>
+    <!--crumbs end-->
+    <!--your orders Starts-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+            <h2>Your Orders</h2>
+            </div>
+            <div class="col-md-8">
+                <form class="form-inline float-md-right">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button type="button" class="btn btn-dark">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <input type="text" class="form-control" name="orderName" id="orderName" />
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-dark">Search orders</button>
+                        </div>
+                    </div>
+            </div>
+            </form>
+
+        </div>
+
+    <div class="card mt-4">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-4 mt-3 mt-md-0">
+                    <p class="text-uppercase text-muted my-0">order place</p>
+                    <p class="text-uppercase text-muted my-0">15 september 2020</p>
+                </div>
+                <div class="col-md-4 mt-3 mt-md-0">
+                    <p class="text-uppercase text-muted my-0">Total </p>
+                    <p class="text-uppercase text-muted my-0"><i class="fas fa-rupee-sign"></i> 150</p>
+                </div>
+                <div class="col-md-4 mt-3 mt-md-0">
+                    <p class="text-uppercase text-muted my-0 float-md-right">Order # xasdsa1221xsx</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <!--order serach start-->
+            <div class="row">
+                <div class="col-md-1">
+                    <img src="img/product_images/product01.png" alt="product 01 image" width="58" height="90" />
+                </div>
+                <div class="col-md-5">
+                        <a href="#">Oppo Mobile AS6</a>
+                        <p class="text-muted my-0">Sold by : Narendra Modi</p>
+                        <p class="text-uppercase my-0"><i class="fas fa-rupee-sign"></i> 
+                            <span class="text-danger">150</span></p>
+
+                </div>
+                <div class="col-md-6 d-flex flex-column">
+                        <a href="#" class="btn btn-outline-secondary btn-sm w-50 ml-md-auto my-1">Cancel Order</a>
+                        <a href="#" class="btn btn-outline-info btn-sm w-50 ml-md-auto ml-0 my-1">Generate Invoice</a>
+                </div>
+            </div>
+            <!--order serach end-->
+
+        </div>
+      </div>
+    </div>
+    <!--your orders end-->
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -164,7 +239,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
-
     <!--drawer js file -->
     <script src="js/bootstrap-drawer.min.js"></script>
     <!--  Custom Js  -->

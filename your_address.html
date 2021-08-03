@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/bootstrap-drawer.min.css" />
 
     <link rel="stylesheet" href="css/custom.css" />
-    <title>Amazon : Navbar</title>
+    <title>Amazon : your address</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
     <!-- Nabbar start-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <!--drawer start-->
-        <button class="btn btn-outline-light"  data-toggle="drawer" data-target="#amazonDrawer">
+        <button class="btn btn-outline-light" data-toggle="drawer" data-target="#amazonDrawer">
             <i class="fas fa-sliders-h"></i>
         </button>
 
@@ -38,7 +38,7 @@
             <div class="drawer-content drawer-content-scrollable" role="document">
                 <div class="drawer-header bg-dark text-white">
                     <h4 class="drawer-title mx-auto" id="drawer-demo-title">
-                    <i class="far fa-user-circle"></i> Hello, Sign In
+                        <i class="far fa-user-circle"></i> Hello, Sign In
 
                     </h4>
                 </div>
@@ -46,10 +46,11 @@
                     <h6 class="text-muted text-uppercase">Help & Settings</h6>
                     <a href="your_account.html" class="btn btn-outline-success my-2 btn-sm">Your Account</a>
                     <a href="login.html" class="btn btn-warning my-2 btn-sm">Sign in</a>
-                   
+
                 </div>
                 <div class="drawer-footer">
-                    <button type="button" class="btn btn-outline-danger btn-sm" data-dismiss="drawer" aria-label="Close">
+                    <button type="button" class="btn btn-outline-danger btn-sm" data-dismiss="drawer"
+                        aria-label="Close">
                         <i class="fas fa-2x fa-times"></i>
                     </button>
 
@@ -57,7 +58,6 @@
             </div>
         </div>
         <!--drawer end-->
-
         <a class="navbar-brand pl-2" href="#"><img src="img/amazon_logo_white.png" height="30" width="100"
                 alt="amazon white" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -155,6 +155,58 @@
     </nav>
     <!-- nab bar end-->
 
+    <!--crumbs start-->
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent ml-n3">
+                <li class="breadcrumb-item"><a href="your_account.html">Your Account</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Your Addresses</li>
+            </ol>
+        </nav>
+        <h2>Your Addresses</h2>
+
+        <!--address card start-->
+        <div class="row">
+            <div class="col-md-4 my-md-0 my-2">
+                <a href="http://" class="btn bg-transparent m-0 p-0">
+                    <div class="card" style="border: 2px dashed #c7c7c7;">
+                        <div class="card-body">
+                            <i class="fas fa-plus fa-3x" style="color: #c7c7c7;"></i>
+                            <h5 class="card-title">Add Address</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 my-md-0 my-2">
+                <div class="card">
+                    <div class="card-header bg-transparent">
+                        <p class="text-muted p-0 m-0">Default: <i class="fab fa-amazon"></i></p>
+                    </div>
+                    <div class="card-body">
+                        <p class="font-weight-bold my-0 py-0"> Bhanu pratap</p>
+                        <p class="my-0 py-0"> House No. 23</p>
+                        <p class="my-0 py-0"> ABC</p>
+                        <p class="my-0 py-0"> noida Delhi-Ncr</p>
+                        <p class="my-0 py-0"> India</p>
+                        <p class="my-0 py-0"> 999999999</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-outline-info btn-sm">
+                            <i class="fas fa-pencil-alt"></i></a>
+                        <a href="#" class="btn btn-outline-danger btn-sm">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--address card end-->
+
+    </div>
+    <!--crumbs end-->
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -164,7 +216,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
-
     <!--drawer js file -->
     <script src="js/bootstrap-drawer.min.js"></script>
     <!--  Custom Js  -->

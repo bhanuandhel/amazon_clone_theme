@@ -23,3 +23,12 @@
       left: 50%;
       transform: translate(-50%, -50%);
   }
+
+  /* Style to change separator  */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+
+.rating:hover {
+  color: #ffa41c;
+}
