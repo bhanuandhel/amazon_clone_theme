@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/bootstrap-drawer.min.css" />
 
     <link rel="stylesheet" href="css/custom.css" />
-    <title>Amazon : Navbar</title>
+    <title>Amazon : your address</title>
 </head>
 
 <body>
@@ -155,103 +155,56 @@
     </nav>
     <!-- nab bar end-->
 
-    <!--your account Starts-->
+    <!--crumbs start-->
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent ml-n3">
+                <li class="breadcrumb-item"><a href="your_account.html">Your Account</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Your Addresses</li>
+            </ol>
+        </nav>
+        <h2>Your Addresses</h2>
 
-    <div class="container mt-5">
-        <h2>Your Account</h2>
-        <!--account panel start-->
+        <!--address card start-->
         <div class="row">
-            <div class="col-md-4">
-                <a href="your_orders.html" class="btn w-100">
-                    <div class="card">
+            <div class="col-md-4 my-md-0 my-2">
+                <a href="http://" class="btn bg-transparent m-0 p-0">
+                    <div class="card" style="border: 2px dashed #c7c7c7;">
                         <div class="card-body">
-                            <div class="card-title">
-                                <i class="fas fa-2x fa-shopping-basket"></i>
-                                <span class="h4">Your Orders</span>
-                            </div>
-                            <small class="text-muted">Track, return or buy things again.</small>
+                            <i class="fas fa-plus fa-3x" style="color: #c7c7c7;"></i>
+                            <h5 class="card-title">Add Address</h5>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="col-md-4">
-                <a href="change_password.html" class="btn w-100">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="card-title">
-                                <i class="fas fa-2x fa-key"></i>
-                                <span class="h4">Password Change</span>
-                            </div>
-                            <small class="text-muted">Change Your Password.</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="your_address.html" class="btn w-100">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="card-title">
-                                <i class="fas fa-2x fa-map-marked-alt"></i>
-                                <span class="h4">Your Addresses</span>
-                            </div>
-                            <small class="text-muted">Edit Address for your Orders.</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <!--account panel end-->
-        <div class="dropdown-divider"></div>
-        <!--account panel start-->
-        <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 my-md-0 my-2">
                 <div class="card">
-                    <div class="card-body">
-                        <div class="card-title font-weight-bold">
-                            Payment Method
-                        </div>
-                        <div class="d-flex flex-column">
-                            <a href="http://">PayTM</a>
-                            <a href="http://">RuPay</a>
-                            <a href="http://">Axis bank</a>
-                        </div>
+                    <div class="card-header bg-transparent">
+                        <p class="text-muted p-0 m-0">Default: <i class="fab fa-amazon"></i></p>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
                     <div class="card-body">
-                        <div class="card-title font-weight-bold">
-                            Payment Method
-                        </div>
-                        <div class="d-flex flex-column">
-                            <a href="http://">PayTM</a>
-                            <a href="http://">RuPay</a>
-                            <a href="http://">Axis bank</a>
-                        </div>
+                        <p class="font-weight-bold my-0 py-0"> Bhanu pratap</p>
+                        <p class="my-0 py-0"> House No. 23</p>
+                        <p class="my-0 py-0"> ABC</p>
+                        <p class="my-0 py-0"> noida Delhi-Ncr</p>
+                        <p class="my-0 py-0"> India</p>
+                        <p class="my-0 py-0"> 999999999</p>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title font-weight-bold">
-                            Payment Method
-                        </div>
-                        <div class="d-flex flex-column">
-                            <a href="http://">PayTM</a>
-                            <a href="http://">RuPay</a>
-                            <a href="http://">Axis bank</a>
-                        </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-outline-info btn-sm">
+                            <i class="fas fa-pencil-alt"></i></a>
+                        <a href="#" class="btn btn-outline-danger btn-sm">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <!--account panel end-->
+
+        <!--address card end-->
+
     </div>
-
-    <!--your account end-->
+    <!--crumbs end-->
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
